@@ -70,7 +70,7 @@ export default function Nav(props:any) {
             <div>
               <div className="flex flex-col items-center">
                 <div className="flex flex-row justify-center mt-[44px] mb-[60px] md:mb-[60px]">
-                  <img src="/img/logo-white.png" alt="" className="w-[140px]" />
+                  <Image src="/img/logo-white.png" alt="logo" width={"140px"} height={"30px"} />
                 </div>
                 {[
                   { title: "Overview", route: "/"},
@@ -79,7 +79,7 @@ export default function Nav(props:any) {
                   { title: "Docs", route: "https://mojito-capital.gitbook.io/untitled-2/docs"},
                 ].map(({ route, title }) => (
                   <Link href={route} passHref key={title}>
-                    <a className={cn("flex m-auto hover:bg-[#4E23A7] w-[188px] h-[46px] rounded-[10px] mx-[28px] mb-[14px] md:mb-[10px]", pathname == route?"bg-[#4E23A7]": "bg-transparent dark:bg-[#0F0A0D]")} target="_blank">
+                    <a className={cn("flex m-auto hover:bg-[#4E23A7] w-[188px] h-[46px] rounded-[10px] mx-[28px] mb-[14px] md:mb-[10px]", pathname == route?"bg-[#4E23A7]": "bg-transparent dark:bg-[#0F0A0D]")}>
                       <div className="my-auto">
                         <div className="text-[14px] text-gray-900 dark:text-gray-100 ml-[50px]">{title}</div>
                       </div>

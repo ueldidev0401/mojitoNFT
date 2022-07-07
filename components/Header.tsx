@@ -1,5 +1,7 @@
 import Link from "next/link" // Dynamic routing
 import { useState } from "react" // State management
+import Image from "next/image"; // Images
+
 import { MenuAlt2Icon } from "@heroicons/react/outline";
 interface props{
     setDarkMode: void,
@@ -24,7 +26,7 @@ export default function Header(props:any) {
                     <button type="button" className="bg-[#4E23A7] rounded-[14px]  w-[188px] md:w-[204px] h-[60px] v-btn v-btn--has-bg theme--light elevation-0 v-size--x-large" role="button" aria-haspopup="true" aria-expanded="false">
                         <span className="v-btn__content">
                             <div className="flex flex-row justify-center mx-[24px] normal-case">
-                                <img src="/icons/wallet.svg" alt="" className="mr-[10px]" /> 
+                                <Image src="/icons/wallet.svg" alt="wallet" width={"20px"} height={"10px"}/> 
                                 <span className="text-[14px] text-white py-[12px] font-semibold cursor-pointer">Connect Wallet</span>
                             </div>
                         </span>
