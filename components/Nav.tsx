@@ -110,7 +110,7 @@ export default function Nav(props:any) {
                     { route: "https://snapshot.org/", icon:"/icons/dextools.png" },
                   ].map(({ route, icon }) => (
                     <li>
-                      <a href={route} target="_blank">
+                      <a href={route}>
                         {/* <div className="flex flex-row mx-[41.5px]"> */}
                           <img src={icon} alt="" className="mr-[10px] w-[24px] h-[24px]" /> 
                         {/* </div> */}
