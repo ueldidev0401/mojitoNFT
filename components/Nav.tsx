@@ -103,13 +103,13 @@ export default function Nav(props:any) {
                 <div className="mb-[14px] md:mb-[28px]">
                   <ul className="nav-social">
                   {[
-                    { route: "https://twitter.com/", icon:"/icons/twitter.svg"},
-                    { route: "https://discord.gg", icon:"/icons/telegram.svg" },
-                    { route: "https://snapshot.org/", icon:"/icons/medium.png" },
-                    { route: "https://snapshot.org/", icon:"/icons/github.svg" },
-                    { route: "https://snapshot.org/", icon:"/icons/dextools.png" },
-                  ].map(({ route, icon }) => (
-                    <li>
+                    { route: "https://twitter.com/", icon:"/icons/twitter.svg", key:1},
+                    { route: "https://discord.gg", icon:"/icons/telegram.svg", key:2},
+                    { route: "https://snapshot.org/", icon:"/icons/medium.png", key:3},
+                    { route: "https://snapshot.org/", icon:"/icons/github.svg", key:4},
+                    { route: "https://snapshot.org/", icon:"/icons/dextools.png", key:5 },
+                  ].map(({ route, icon, key }) => (
+                    <li key={key}>
                       <a href={route}>
                         {/* <div className="flex flex-row mx-[41.5px]"> */}
                           <img src={icon} alt="" className="mr-[10px] w-[24px] h-[24px]" /> 
